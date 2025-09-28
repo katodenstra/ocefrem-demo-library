@@ -7,17 +7,20 @@
   border: 1px solid transparent;
   font-weight: 600;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   font-family: var(--font-heading);
+  font-size: var(--font-size-sm);
 }
 
 .btn--primary {
   background: var(--color-primary);
   color: var(--color-primary-contrast);
+  border-radius: var(--radius-sm);
 }
 
 .btn--secondary {
-  background: var(--color-bg);
+  background: var(--color-secondary);
   color: var(--color-text);
   border-color: var(--color-border);
+  border-radius: var(--radius-sm);
 }

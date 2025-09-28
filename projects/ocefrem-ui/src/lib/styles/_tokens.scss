@@ -1,24 +1,60 @@
 $colors: (
-  primary: #0b3c88,
-  primary-contrast: #ffffff,
-  secondary: #e8a100,
+  primary: #87773b,
+  primary-contrast: #f9f9f9,
+  secondary: #c6b55c,
   secondary-contrast: #1a1a1a,
-  bg: #ffffff,
-  surface: #f8fafc,
+  bg: #eceae2,
+  surface: #f9f9f9,
   text: #1a1a1a,
   muted: #6b7280,
-  border: #e5e7eb
+  border: #e5e7eb,
 );
 
-$radius: ( sm: 6px, md: 10px, lg: 16px, pill: 999px );
+$radius: (
+  sm: 6px,
+  md: 10px,
+  lg: 16px,
+  pill: 999px,
+);
 $fonts: (
-  heading: 'Montserrat, system-ui, sans-serif',
-  body: 'Open Sans, system-ui, sans-serif'
+  heading: "Montserrat, system-ui, sans-serif",
+  body: "Open Sans, system-ui, sans-serif",
+);
+$font-sizes: (
+  xs: 12px,
+  sm: 14px,
+  md: 16px,
+  lg: 20px,
+  xl: 24px,
+  xxl: 32px,
+);
+
+$spacing: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px,
+  xxl: 48px,
 );
 
 :root {
-  @each $k, $v in $colors { --color-#{$k}: #{$v}; }
-  @each $k, $v in $radius { --radius-#{$k}: #{$v}; }
+  @each $k, $v in $colors {
+    --color-#{$k}: #{$v};
+  }
+  @each $k, $v in $radius {
+    --radius-#{$k}: #{$v};
+  }
   --font-heading: #{map-get($fonts, heading)};
   --font-body: #{map-get($fonts, body)};
+
+  // font sizes
+  @each $k, $v in $font-sizes {
+    --font-size-#{$k}: #{$v};
+  }
+
+  // spacing
+  @each $k, $v in $spacing {
+    --space-#{$k}: #{$v};
+  }
 }

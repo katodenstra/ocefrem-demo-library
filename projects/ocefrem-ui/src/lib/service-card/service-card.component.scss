@@ -1,19 +1,41 @@
 .service-card {
-  text-align: center;
-  padding: var(--space-lg);
   background: var(--color-surface);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-
-.service-card__image {
-  max-width: 120px;
-  margin-bottom: var(--space-md);
-}
-
-.service-card__actions {
-  margin-top: var(--space-md);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
   display: flex;
-  justify-content: center;
-  gap: var(--space-sm);
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.05));
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+    object-fit: cover;
+  }
+
+  &__content {
+    flex: 1;
+    margin-bottom: var(--space-md);
+
+    h3 {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--space-sm);
+    }
+
+    p {
+      font-family: var(--font-body);
+      font-size: var(--font-size-md);
+      color: var(--color-text);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: auto; // keeps buttons at bottom if card grows
+  }
 }
