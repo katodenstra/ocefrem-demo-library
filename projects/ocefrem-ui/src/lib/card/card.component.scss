@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  background: var(--color-surface);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card--right {
+  flex-direction: row-reverse;
+}
+
+.card__image {
+  width: 160px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.card__content h3 {
+  margin: 0 0 var(--space-sm) 0;
+  font-family: var(--font-heading);
+}

@@ -1,0 +1,15 @@
+.blog-extract {
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.author {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.excerpt {
+  margin: var(--space-md) 0;
+}

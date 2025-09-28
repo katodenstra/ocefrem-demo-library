@@ -1,0 +1,19 @@
+.service-card {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card__image {
+  max-width: 120px;
+  margin-bottom: var(--space-md);
+}
+
+.service-card__actions {
+  margin-top: var(--space-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
