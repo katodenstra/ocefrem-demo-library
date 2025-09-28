@@ -15,7 +15,8 @@
             "outputPath": "dist/demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "assets": ["src/assets","src/favicon.ico"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": ["src/assets", "src/favicon.ico"],
             "styles": ["src/styles.scss"]
           }
         },
@@ -33,9 +34,11 @@
       "sourceRoot": "projects/ocefrem-ui/src",
       "prefix": "of",
       "architect": {
-        "build": {``
+        "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": { "project": "projects/ocefrem-ui/ng-package.json" }
+          "options": {
+            "project": "projects/ocefrem-ui/ng-package.json"
+          }
         }
       }
     }
