@@ -1,0 +1,24 @@
+$colors: (
+  primary: #0b3c88,
+  primary-contrast: #ffffff,
+  secondary: #e8a100,
+  secondary-contrast: #1a1a1a,
+  bg: #ffffff,
+  surface: #f8fafc,
+  text: #1a1a1a,
+  muted: #6b7280,
+  border: #e5e7eb
+);
+
+$radius: ( sm: 6px, md: 10px, lg: 16px, pill: 999px );
+$fonts: (
+  heading: 'Montserrat, system-ui, sans-serif',
+  body: 'Open Sans, system-ui, sans-serif'
+);
+
+:root {
+  @each $k, $v in $colors { --color-#{$k}: #{$v}; }
+  @each $k, $v in $radius { --radius-#{$k}: #{$v}; }
+  --font-heading: #{map-get($fonts, heading)};
+  --font-body: #{map-get($fonts, body)};
+}

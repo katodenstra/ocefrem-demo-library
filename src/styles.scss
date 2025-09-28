@@ -1,0 +1,8 @@
+@use '../projects/ocefrem-ui/src/lib/styles/tokens' as *;
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
