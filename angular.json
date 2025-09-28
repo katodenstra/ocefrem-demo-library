@@ -18,6 +18,14 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/assets", "src/favicon.ico"],
             "styles": ["src/styles.scss"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false
+            }
           }
         },
         "serve": {
