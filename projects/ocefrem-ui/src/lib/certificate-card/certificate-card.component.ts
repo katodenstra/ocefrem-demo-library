@@ -10,9 +10,8 @@ import { ButtonComponent } from "../button/button.component";
     <div class="certificate-card">
       <i
         *ngIf="icon"
-        class=""
         [ngClass]="icon"
-        style="color: var(--color-primary);"
+        style="color: var(--color-primary); font-size: 2rem; margin-bottom: var(--space-md);"
       ></i>
 
       <h3>{{ title }}</h3>

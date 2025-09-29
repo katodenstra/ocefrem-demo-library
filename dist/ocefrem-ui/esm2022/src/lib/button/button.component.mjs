@@ -12,7 +12,7 @@ export class ButtonComponent {
       [disabled]="disabled">
       <ng-content></ng-content>
     </button>
-  `, isInline: true, styles: [".btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:var(--radius-pill);border:1px solid transparent;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:var(--font-heading)}.btn--primary{background:var(--color-primary);color:var(--color-primary-contrast)}.btn--secondary{background:var(--color-bg);color:var(--color-text);border-color:var(--color-border)}\n"] });
+  `, isInline: true, styles: [".btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:var(--radius-pill);border:1px solid transparent;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:var(--font-heading);font-size:var(--font-size-sm)}.btn--primary{background:var(--color-primary);color:var(--color-primary-contrast);border-radius:var(--radius-sm)}.btn--primary:hover{background:var(--color-primary-hover)}.btn--secondary{background:var(--color-secondary);color:var(--color-text);border-color:var(--color-border);border-radius:var(--radius-sm)}.btn--secondary:hover{opacity:.8}\n"] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImport: i0, type: ButtonComponent, decorators: [{
             type: Component,
@@ -24,7 +24,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImpo
       [disabled]="disabled">
       <ng-content></ng-content>
     </button>
-  `, styles: [".btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:var(--radius-pill);border:1px solid transparent;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:var(--font-heading)}.btn--primary{background:var(--color-primary);color:var(--color-primary-contrast)}.btn--secondary{background:var(--color-bg);color:var(--color-text);border-color:var(--color-border)}\n"] }]
+  `, styles: [".btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:var(--radius-pill);border:1px solid transparent;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:var(--font-heading);font-size:var(--font-size-sm)}.btn--primary{background:var(--color-primary);color:var(--color-primary-contrast);border-radius:var(--radius-sm)}.btn--primary:hover{background:var(--color-primary-hover)}.btn--secondary{background:var(--color-secondary);color:var(--color-text);border-color:var(--color-border);border-radius:var(--radius-sm)}.btn--secondary:hover{opacity:.8}\n"] }]
         }], propDecorators: { variant: [{
                 type: Input
             }], disabled: [{

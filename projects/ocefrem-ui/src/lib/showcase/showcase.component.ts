@@ -88,16 +88,29 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
       <of-certificate-card
         icon="fa-regular fa-id-badge"
         title="ISO Certified"
-        subtitle="Quality Management"
+        subtitle="NOM-114-SCFI-2016"
         button="View Certificate"
       >
       </of-certificate-card>
     </section>
 
     <section>
-      <h2>Form Fields</h2>
-      <of-text-field label="Name"></of-text-field>
-      <of-text-area label="Message"></of-text-area>
+      <div class="contact-form">
+        <form>
+          <div class="form-row">
+            <of-text-field placeholder="Name"></of-text-field>
+            <of-text-field placeholder="Email"></of-text-field>
+          </div>
+
+          <div class="form-row">
+            <of-text-area placeholder="Message"></of-text-area>
+          </div>
+
+          <div class="form-actions">
+            <of-button variant="primary">Send</of-button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section>
@@ -109,6 +122,33 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
         button="Read More"
       >
       </of-blog-extract>
+    </section>
+
+    <section>
+      <h2>Use of Blog extract grid</h2>
+      <div class="blog-extract-grid">
+        <of-blog-extract
+          title="Building UI Libraries"
+          author="Mauricio Villada"
+          excerpt="Learn how to design and code reusable Angular components with SCSS tokens..."
+          button="Read More"
+        >
+        </of-blog-extract>
+        <of-blog-extract
+          title="Using SCSS Tokens"
+          author="Mauricio Villada"
+          excerpt="Learn how to use SCSS tokens to build consistent UI components..."
+          button="Read More"
+        >
+        </of-blog-extract>
+        <of-blog-extract
+          title="Components in Angular"
+          author="Mauricio Villada"
+          excerpt="Learn how the difference between Web Components and Angular..."
+          button="Read More"
+        >
+        </of-blog-extract>
+      </div>
     </section>
   `,
   styleUrls: ["./showcase.component.scss"],
