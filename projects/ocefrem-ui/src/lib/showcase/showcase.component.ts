@@ -23,8 +23,10 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
     <h1>OCEFREM UI – Showcase</h1>
     <section>
       <h2>Buttons</h2>
-      <of-button variant="primary">Primary</of-button>
-      <of-button variant="secondary">Secondary</of-button>
+      <div class="button-row">
+        <of-button variant="primary">Primary</of-button>
+        <of-button variant="secondary">Secondary</of-button>
+      </div>
     </section>
 
     <section>
@@ -54,35 +56,37 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
       >
       </of-service-card>
     </section>
-    <section class="service-card-grid">
+    <section>
       <h2>Use of Service Card Grid</h2>
-      <of-service-card
-        image="./assets/service-card-sample.jpg"
-        title="Service Card Wth Both Buttons"
-        text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
-        primaryButton="Hire"
-        secondaryButton="Learn More"
-      >
-      </of-service-card>
-      <of-service-card
-        image="./assets/service-card-sample.jpg"
-        title="Service Card With Primary Button"
-        text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
-        primaryButton="Hire"
-      >
-      </of-service-card>
-      <of-service-card
-        image="./assets/service-card-sample.jpg"
-        title="Service Card With No Buttons"
-        text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
-      >
-      </of-service-card>
+      <div class="service-card-grid">
+        <of-service-card
+          image="./assets/service-card-sample.jpg"
+          title="Service Card With Both Buttons"
+          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
+          primaryButton="Hire"
+          secondaryButton="Learn More"
+        >
+        </of-service-card>
+        <of-service-card
+          image="./assets/service-card-sample.jpg"
+          title="Service Card With Primary Button"
+          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
+          primaryButton="Hire"
+        >
+        </of-service-card>
+        <of-service-card
+          image="./assets/service-card-sample.jpg"
+          title="Service Card With No Buttons"
+          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
+        >
+        </of-service-card>
+      </div>
     </section>
 
     <section>
       <h2>Certificate Card</h2>
       <of-certificate-card
-        icon="https://via.placeholder.com/50"
+        icon="fa-regular fa-id-badge"
         title="ISO Certified"
         subtitle="Quality Management"
         button="View Certificate"

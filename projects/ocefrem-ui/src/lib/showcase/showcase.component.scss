@@ -25,6 +25,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
+div {
+  background-color: var(--color-surface);
+  padding: var(--space-lg);
+}
+
+.button-row {
+  display: flex;
+  gap: var(--space-md);
+}
+
 .service-card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); // 3 cards in a row

@@ -1,23 +1,31 @@
 import { Component, Input } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { ButtonComponent } from "../button/button.component";
 
 @Component({
   selector: "of-certificate-card",
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [CommonModule, ButtonComponent],
   template: `
     <div class="certificate-card">
-      <img [src]="icon" alt="" class="certificate-card__icon" />
+      <i
+        *ngIf="icon"
+        class=""
+        [ngClass]="icon"
+        style="color: var(--color-primary);"
+      ></i>
+
       <h3>{{ title }}</h3>
-      <p class="subtitle">{{ subtitle }}</p>
-      <of-button variant="primary">{{ button }}</of-button>
+      <p>{{ subtitle }}</p>
+
+      <of-button *ngIf="button" variant="primary">{{ button }}</of-button>
     </div>
   `,
   styleUrls: ["./certificate-card.component.scss"],
 })
 export class CertificateCardComponent {
-  @Input() icon = "";
+  @Input() icon?: string;
   @Input() title = "";
   @Input() subtitle = "";
-  @Input() button = "Learn more";
+  @Input() button?: string;
 }
