@@ -70,14 +70,14 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
         <of-service-card
           image="./assets/service-card-sample.jpg"
           title="Service Card With Primary Button"
-          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
+          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multiple cards in one section. This one has just a Primary button."
           primaryButton="Hire"
         >
         </of-service-card>
         <of-service-card
           image="./assets/service-card-sample.jpg"
           title="Service Card With No Buttons"
-          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. It can have primary and secondary actions."
+          text="This is a service card. This card will give you an example of a service from Ocefrem. <br>You can have multimple cards in one section. This card has no buttons."
         >
         </of-service-card>
       </div>
@@ -92,25 +92,6 @@ import { BlogExtractComponent } from "../blog-extract/blog-extract.component";
         button="View Certificate"
       >
       </of-certificate-card>
-    </section>
-
-    <section>
-      <div class="contact-form">
-        <form>
-          <div class="form-row">
-            <of-text-field placeholder="Name"></of-text-field>
-            <of-text-field placeholder="Email"></of-text-field>
-          </div>
-
-          <div class="form-row">
-            <of-text-area placeholder="Message"></of-text-area>
-          </div>
-
-          <div class="form-actions">
-            <of-button variant="primary">Send</of-button>
-          </div>
-        </form>
-      </div>
     </section>
 
     <section>

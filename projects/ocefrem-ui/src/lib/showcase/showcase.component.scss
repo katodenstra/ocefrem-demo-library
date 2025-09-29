@@ -54,7 +54,9 @@ div {
   background: var(--color-bg);
   border-radius: var(--radius-md);
   padding: var(--space-xl);
-  box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.05));
+  box-shadow: var(--shadow-sm, 0 2px 6px rgba(0, 0, 0, 0.08));
+  max-width: 1000px;
+  margin: 0 auto; // center the form on page
 
   form {
     display: flex;
@@ -66,6 +68,13 @@ div {
     display: flex;
     gap: var(--space-lg);
     background: var(--color-bg);
+    > * {
+      flex: 1;
+    }
+
+    &.full-width {
+      flex: 1 1 100%;
+    }
 
     // stack on mobile
     @media (max-width: 768px) {
