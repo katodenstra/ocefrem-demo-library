@@ -196,7 +196,7 @@ class TextFieldComponent {
       {{ label }}
       <input [type]="type" [(ngModel)]="value" class="text-field" />
     </label>
-  `, isInline: true, styles: [".text-field{width:100%;padding:var(--space-sm);border:1px solid var(--color-border);border-radius:var(--radius-sm)}\n"], dependencies: [{ kind: "ngmodule", type: FormsModule }, { kind: "directive", type: i1$1.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i1$1.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i1$1.NgModel, selector: "[ngModel]:not([formControlName]):not([formControl])", inputs: ["name", "disabled", "ngModel", "ngModelOptions"], outputs: ["ngModelChange"], exportAs: ["ngModel"] }] });
+  `, isInline: true, styles: [".text-field{flex:1;min-width:220px}.text-field label{display:none}.text-field input{width:100%;height:48px;padding:var(--space-md);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:var(--font-size-md);font-family:var(--font-body);color:var(--color-text);background:var(--color-surface)}.text-field input::placeholder{color:var(--color-muted)}.text-field input:focus{outline:none;border-color:var(--color-primary)}\n"], dependencies: [{ kind: "ngmodule", type: FormsModule }, { kind: "directive", type: i1$1.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i1$1.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i1$1.NgModel, selector: "[ngModel]:not([formControlName]):not([formControl])", inputs: ["name", "disabled", "ngModel", "ngModelOptions"], outputs: ["ngModelChange"], exportAs: ["ngModel"] }] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImport: i0, type: TextFieldComponent, decorators: [{
             type: Component,
@@ -205,7 +205,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImpo
       {{ label }}
       <input [type]="type" [(ngModel)]="value" class="text-field" />
     </label>
-  `, styles: [".text-field{width:100%;padding:var(--space-sm);border:1px solid var(--color-border);border-radius:var(--radius-sm)}\n"] }]
+  `, styles: [".text-field{flex:1;min-width:220px}.text-field label{display:none}.text-field input{width:100%;height:48px;padding:var(--space-md);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:var(--font-size-md);font-family:var(--font-body);color:var(--color-text);background:var(--color-surface)}.text-field input::placeholder{color:var(--color-muted)}.text-field input:focus{outline:none;border-color:var(--color-primary)}\n"] }]
         }], propDecorators: { label: [{
                 type: Input
             }], type: [{
@@ -223,7 +223,7 @@ class TextAreaComponent {
       {{ label }}
       <textarea [(ngModel)]="value" class="text-area"></textarea>
     </label>
-  `, isInline: true, styles: [".text-area{width:100%;min-height:100px;padding:var(--space-sm);border:1px solid var(--color-border);border-radius:var(--radius-sm)}\n"], dependencies: [{ kind: "ngmodule", type: FormsModule }, { kind: "directive", type: i1$1.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i1$1.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i1$1.NgModel, selector: "[ngModel]:not([formControlName]):not([formControl])", inputs: ["name", "disabled", "ngModel", "ngModelOptions"], outputs: ["ngModelChange"], exportAs: ["ngModel"] }] });
+  `, isInline: true, styles: [".text-area{display:block;width:100%}.text-area label{display:none}.text-area textarea{width:100%;min-height:160px;padding:var(--space-md);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:var(--font-size-md);font-family:var(--font-body);color:var(--color-text)}.text-area textarea::placeholder{color:var(--color-muted)}.text-area textarea:focus{outline:none;border-color:var(--color-primary)}\n"], dependencies: [{ kind: "ngmodule", type: FormsModule }, { kind: "directive", type: i1$1.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i1$1.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i1$1.NgModel, selector: "[ngModel]:not([formControlName]):not([formControl])", inputs: ["name", "disabled", "ngModel", "ngModelOptions"], outputs: ["ngModelChange"], exportAs: ["ngModel"] }] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImport: i0, type: TextAreaComponent, decorators: [{
             type: Component,
@@ -232,7 +232,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.12", ngImpo
       {{ label }}
       <textarea [(ngModel)]="value" class="text-area"></textarea>
     </label>
-  `, styles: [".text-area{width:100%;min-height:100px;padding:var(--space-sm);border:1px solid var(--color-border);border-radius:var(--radius-sm)}\n"] }]
+  `, styles: [".text-area{display:block;width:100%}.text-area label{display:none}.text-area textarea{width:100%;min-height:160px;padding:var(--space-md);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:var(--font-size-md);font-family:var(--font-body);color:var(--color-text)}.text-area textarea::placeholder{color:var(--color-muted)}.text-area textarea:focus{outline:none;border-color:var(--color-primary)}\n"] }]
         }], propDecorators: { label: [{
                 type: Input
             }], value: [{
